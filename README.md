@@ -1,7 +1,7 @@
 # 如何构建
 
 ```bash
-$ make build-arthur ./Makefile.build
+$ make build-arthur -f ./Makefile.build
 ```
 
 
