@@ -1,0 +1,5 @@
+build-img:
+	docker build -t arthur -f Dockerfile . --progress=plain
+
+build-arthur: build-img
+	docker run -it -v $$(pwd):/opt/workspace arthur bash -c "cd /opt/workspace && make"
